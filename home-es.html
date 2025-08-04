@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="styles/images/favicon.png" type="image/png">
+    <script src="https://kit.fontawesome.com/88d8be5d1d.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <meta name="keywords" content="portfolio, webdesign, web, design, diseñador web, programacion">
+    <meta name="description" content="Leonardo Polidori | design movement">
+    <meta name="author" content="Leonardo Polidori">
+    <title>Leonardo Polidori | Design movement</title>
+</head>
+<body>
+
+<!------------------------------------------- Header ------------------------------------------->
+
+    <header id="home">
+        <div class="title__container">
+            <h1 class="title">Leonardo Polidori.</h1>
+            <h2 class="subtitle">Design Movement.</h2>
+        </div>
+        <div class="arrow-container"><i class="fa-solid fa-angle-down"></i></div>
+    </header>
+    
+<!------------------------------------------- Nav ------------------------------------------->
+    <nav class="menu__container">
+                <div class="bgcontainer2">
+                <video autoplay loop playsinline muted class="bgvideo">
+                <source src="styles/videos/bgvideo.mp4" type="video/mp4">
+                Tu navegador no soporta video HTML5
+                </video>
+                </div>
+            <ul class="menu">
+                <li class="menu--itemcontainer"><a class="menu--item" href="#home">Home</a></li>
+                <li class="menu--itemcontainer">
+                    <details class="menu--details">
+                        <summary class="mdetails--summary">Perfil</summary>
+                            <div class="summary--container">
+                                <a class="menu--item details--item" href="#about">Resumen</a>
+                                <a class="menu--item details--item" href="#education">Habilidades</a>
+                                <a class="menu--item details--item" href="#experience">Experiencia</a>
+                            </div>
+                    </details></li>
+                <li class="menu--itemcontainer"><a class="menu--item" href="#projects">Proyectos</a></li>
+                <li class="menu--itemcontainer"><a class="menu--item" href="#contact">Contacto</a></li>
+            </ul>
+    </nav>
+    
+<!------------------------------------------- Body ------------------------------------------->
+
+    <div class="main__container" id="main__container">
+        <main>
+            <section class="main__section" id="about">
+                <h3 class="section--title">Front-ender jr developer</h3>
+                <h4 class="section--innertitle">• HTML | CSS | Python | SQL •</h4>
+                <div class="main__sectionflex">
+                    <div class="img--container">
+                        <img class="profilepicture" loading="lazy" 
+                        src="styles/images/profile.png"
+                        srcset="styles/images/profile.png 1000w,
+                        styles/images/profile-medium.png 600w, 
+                        styles/images/profile-small.png 400w,"
+                        sizes="(min-width: 320px) 10vw,
+                        (min-width: 600px) 15vw, 25vw"
+                        alt="Leonardo Polidori"> 
+                    </div> 
+                    <p class="section--body section--bodyflex">
+                            Mi nombre es Leonardo Polidori, soy un web designer en formación autodidacta, radicado en Córdoba, Argentina, con conocimientos HTML, CSS, Python, SQL, y JS; trabajo con VSCode, y GitHub para el entorno de mis proyectos y estoy buscando actualmente ingresar a un equipo de trabajo donde pueda aplicar mis conocimientos y ganar experiencia para acabar de formarme profesionalmente en el ámbito del diseño web. 
+                            Mi perfil está orientado al diseño, pero tengo gran capacidad de adaptabilidad y fuerte experiencia administrativa, que aportan a mi perfil conocimiento valioso a la hora de insertarme en desafíos que propongan análisis de datos y manejo de números. También poseo una sólida habilidad comunicativa y humana que me colocan como un confiable valor a la hora de acoplarme a equipos de trabajo. 
+
+                            Más adelante en ésta página encontrará más puntualmente detalladas cada una de mis habilidades adquiridas, mis proyectos, mi mapa de aprendizaje con la proyección que tengo planeada a futuro para mis estudios y mi experiencia fuera del diseño. Además una caja de contacto en caso de que quisiera comunicarse conmigo por via mail y por último en el footer los enlacer a mis redes y a mi contacto de Whatsapp.  
+                            Espero podamos comunicarnos pronto. 
+
+                            Atentamente,
+                            Leonardo Polidori                        
+                    </p>
+                </div>
+            </section>
+
+                <section class="main__section faqs">
+                    <details class="section--faqs" id="education" open="">
+                        <summary><h3 class="section--title soft-palp">Habilidades</h3></summary>
+                        <div class="carrousel1">
+                            <ul class="education__container">
+                                <li class="edcuation--item">
+                                    <div class="education--display">
+                                        <p class="education--pbox">
+                                            <i class="fa-brands fa-html5 education--fabr" aria-hidden="true"></i>
+                                            <i class="fa-brands fa-css3-alt education--fabr" aria-hidden="true"></i>
+                                            </p><h4 class="section--innertitle">HTML / CSS</h4>
+                                            
+                                            <span class="education--text">Mi stack sin dudas es el Font-end, si bien aún estoy en proceso de terminar de aprender a fondo las tecnologías que lo componen, al ir cursando e investigando las áreas con las que siento más afinidad, encuentro en estás tecnologías un candidato sólido para consolidar mi área de expertise.
+                                            En HTML y CSS manejo hoy un buen abanico de herramientas, como podrá comprobar en ésta web, desde conocimientos teóricos aplicables sobre SEO a la hora de trabajar con HTML, hasta responsive design, pasando por las tecnologías de modelos de cajas y animaciones en CSS.</span>
+                                    </div>
+                                </li>
+                                <li class="edcuation--item">
+                                    <div class="education--display">
+                                        <p class="education--pbox">
+                                            <i class="fa-brands fa-python education--fabr" aria-hidden="true"></i>
+                                            </p><h4 class="section--innertitle">Python</h4>
+
+                                            <span class="education--text">Fue en Python que comencé a estudiar programación, y si bien no es el área que tengo más complementada dentro del abanico de librerías que ofrece, manejo las herramientas básicas del lenguaje: datos simples, listas, tuplas, diccionarios (cada uno con sus métodos más utilizados), funciones integradas, def, bucles, condicionales, y las librerías Pandas, Matplotlib y Seaborn.</span>
+                                    </div>
+                                </li>
+                                <li class="edcuation--item">
+                                    <div class="education--display">
+                                        <p class="education--pbox">
+                                            <i class="fa-solid fa-database education--fabr" aria-hidden="true"></i>
+                                            </p><h4 class="section--innertitle">SQL</h4>
+                                        
+                                            <span class="education--text">SQL fue mi segunda opción a la hora de decantarme por el aprendizaje ya que siento que complementa muy bien mi experiencia previa en áreas que requerían de manejo de datos desde la perspectiva de usuario, trabajando con SQLite, puedo hacer uso de las herramientas y teorías más habituales de éste lenguaje: normalización de datos, consultas, subconsultas y condicionales. </span>
+                                    </div>
+                                </li>
+                                <li class="edcuation--item">
+                                    <div class="education--display">
+                                        <p class="education--pbox">
+                                            <i class="fa-brands fa-square-js education--fabr" aria-hidden="true"></i>
+                                            </p><h4 class="section--innertitle">Javascript</h4>
+                                        
+                                            <span class="education--text">JavaScript es el último de los lenguajes en el que estoy incursionando. Si bien enumerar las herramientas que manejo actualmente con soltura sería prematuro, es sin dudas el próximo paso en mi formación, y la antesala a tecnologías como React o Node.
+                                            En esta misma página ya comencé a aplicar algunas funciones básicas y a comprender su lógica.
+                                            </span>
+                                    </div>
+                                </li>
+                                <li class="edcuation--item">
+                                    <div class="education--display">
+                                        <p class="education--pbox">
+                                            <i class="fa-solid fa-map education--fabr"></i>
+                                            <h4 class="section--innertitle">Mapa</h4>
+                                        
+                                            <span class="education--text">Como quedó especificado en el item anterior, mis próximos pasos van a seguir por el camino del stack Front-end, sin duda el diseño es lo que de momento más cómodo me resulta a la hora de trabajar y lo que más suscita mi interés, pero luego de ahondar en React y Node, mi idea es apuntar a librerías de python para trabajar con interfaces y experiencias de usuario en apps.
+                                            Aprovecho éste apartado para nombrar habílidades que poseo y que han quedado huérfanas en este resumen: Photoshop, Excel, manejo de inglés a nivel intermedio, y conocimiento sólido en tecnologías ERS a nivel usuario.
+                                            </span>
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </details>
+                </section>
+                
+
+            <section class="main__section">
+                <h3 class="section--title" id="projects">Proyectos</h3>
+                <div class="carrousel2">
+                            <ul class="education__container2">
+                                <i class="fa-solid fa-bookmark bookmark1"></i>
+                                <li class="edcuation--item2">
+                                    <div class="education--display2" id="proyectos">
+                                        <p class="education--pbox2">
+                                            <i class="fa-solid fa-bookmark education--fabr"></i>
+                                            </p><h4 class="section--innertitle"></h4>
+                                            
+                                            <span class="education--text">A continuación podrá encontrar un repaso por los proyectos que he ido realizando en estos meses a medida que he avanzado con mi aprendizaje e incorporando nuevas herramientas a mi stack. 
+                                            Ordenados del último al primero, cada uno de ellos es un punto clave en el mapa de mi trayecto desde que empecé a trabajar con código, hasta ahora y son también evidencia de mi interés por aprender cada día un poco más.
+                                            </span>
+                                    </div>
+                                </li>
+                                <li class="edcuation--item2">
+                                    <div class="education--display2" id="la-libreria-invisible">
+                                        <p class="education--pbox2">
+                                            <a href="https://hotiel.github.io/la-pagina-invisible/" rel="noreferer" rel="noopener" target="_blank"><i class="fa-solid fa-link education--fabr2"></i></a>
+                                            </p><h4 class="section--innertitle">Web: "La página invisible"</h4>
+
+                                            <span class="education--text">"La página invisible" (JUL 2025) es una librería ficticia de pueblo, especializada en novelas de fantasía y que realiza encuentros estilo "ferias medievales", a la que diseñé una página con presentación, recomendaciónes mensuales, contacto y diseño personalizado.
+                                            En ella comencé a trabajar con librerías de íconos, paletas de colores prediseñadas y navs, aún sin diseño responsive, es la antepasada directa de este portfolio.</span>
+                                    </div>
+                                </li>
+                                <li class="edcuation--item2">
+                                    <div class="education--display2" id="circeria">
+                                        <p class="education--pbox2">
+                                            <a href="https://hotiel.github.io/Circeria-La-mujer-de-rojo/" rel="noreferer" rel="noopener" target="_blank"><i class="fa-solid fa-link education--fabr2"></i></a>
+                                            </p><h4 class="section--innertitle">Web (CYOA game)
+                                                "La mujer de rojo"
+                                            </h4>
+                                            
+                                            <span class="education--text">
+                                                "La mujer de rojo" (JUN 2025) Mi primer diseño web, fue un sitio donde trabajé con los enlaces entre páginas y archivos, y donde lo destacable sin dudas es el contenido de la web, donde se cuenta una historia en la se puede apreciar mi capacidad creativa más de cerca.
+                                                Sin lugar a dudas, en retrospectiva hoy puedo ver, en este trabajo más claramente que en los posteriores, los errores de diseño que tiene, sin embargo me parece un sólido punto de partida. Y un interesante proyecto a retomar más adelante. 
+                                            </span>
+                                    </div>
+                                </li>
+                                <li class="edcuation--item2">
+                                    <div class="education--display2" id="normalización-de-datos">
+                                        <p class="education--pbox2">
+                                            <a href="https://github.com/Hotiel/data_analysis_amazonDB" rel="noreferer" rel="noopener" target="_blank"><i class="fa-solid fa-link education--fabr2"></i></a>
+                                            </p><h4 class="section--innertitle">Análisis y normalización de base de datos</h4>
+                                        
+                                            <span class="education--text">(MAY 2025) Para este proyecto de análisis, normalización y presentación de datos, trabajé con una base de datos pública de productos de Amazon.
+                                            En el repositorio de Github y en el readme dentro del archivo encontrará los pormenores de las desiciones tomadas para realizarlo. Los gráficos están realizados con Matplotlib y Seabron y el entorno de trabajo fue SQLite para las consultas SQL y VSCode para el trabajo en Python. 
+                                            </span>
+                                    </div>
+                                </li>
+            </section>
+
+            <section class="main__section faqs">
+                <details class="section--faqs soft-palp" id="experience">
+                    <summary><h3 class="section--title">Experiencia extra</h3></summary>
+                    <div class="experience__flexbox">
+                        <div class="experience--item">
+                            <i class="fa-solid fa-briefcase fabr--exp"></i>
+                            <h4 class="section--innertitle">Super Zamba S.A.S</h3>
+                            <p class="experience--text">
+                                <span class="fecha">Febrero 2020 | Mayo 2025</span>
+                                Cajero, supervisor, adminitrativo.
+                                Tareas de gestión de equipo y control de stock, cierre de cajas y UE de sistema ERS aplicado a comercios, trabajo superficial con páginas de AFIP y Delfín.
+
+                                Teléfono de contacto: 3541-671034 | Florencia
+                            </p>
+                        </div>
+                        <div class="experience--item"><i class="fa-solid fa-briefcase fabr--exp"></i>
+                        <h4 class="section--innertitle">Rod's Food</h3>
+                            <p class="experience--text">
+                                <span class="fecha">Diciembre 2015 | Enero 2020</span>
+                                Emprendimiento Personal | Copropietario
+                                Gestion administrativa plena, trato con clientes y proveedores, dirección de equipo.
+                            </p>
+                        </div>
+                        <div class="experience--item"><i class="fa-solid fa-briefcase fabr--exp"></i>
+                            <h4 class="section--innertitle">Trabajos varios</h3>
+                            <p class="experience--text">
+                                Diseñador gráfico, profesor particular de literatura, cocina, atención al público, panadería.
+                            </p></div>
+                    </div>
+            </section>
+
+            <form action="" class="main__section contactbox" id="contact">
+                <fieldset>  
+                    <legend><h3 class="section--title">Contact me</h3></legend>
+                    <label for="name">Nombre:</label>
+                        <input type="text" class="contact--input" id="name" required>
+
+                    <label for="company">Empresa:</label>
+                        <input type="text" class="contact--input" id="company">
+                    
+                    <label for="email">Email:</label>
+                        <input type="email" class="contact--input" id="email" required>
+
+                    <label for="number">Número de contacto:</label>
+                        <input type="text" class="contact--input" id="number" required>
+
+                    <label for="msj">Deja tu mensaje:</label>
+                        <textarea name="message" class="contact--input" rows="10" maxlength="900" id="msj" required></textarea>
+
+                    <button class="send" type="submit">submit</button>
+                </fieldset>
+            </form>
+        </main>
+
+<!------------------------------------------- Footer ------------------------------------------->
+
+        <footer class="footer">
+            <div class="bgcontainer">
+                <video autoplay loop playsinline muted class="bgvideo">
+                    <source src="styles/videos/bgvideo.mp4" type="video/mp4">
+                    Tu navegador no soporta video HTML5
+                </video>
+            </div>
+            <div class="footer__content">
+            <p>© 2025 - Leonardo Polidori</p>
+            <div class="redes"><ul>
+                <li><a href="" class="icono" rel="noreferer" rel="noopener" target="_blank"><i class="fabr fa-brands fa-linkedin"></i></a></li>
+                <li><a href="" class="icono" rel="noreferer" rel="noopener" target="_blank"><i class="fabr fa-brands fa-instagram"></i></a></li>
+                <li><a href="" class="icono" rel="noreferer" rel="noopener" target="_blank"><i class="fabr fa-brands fa-whatsapp"></i></a></li>
+            </ul></div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

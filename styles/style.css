@@ -1,0 +1,1032 @@
+body, html, header {
+    background-color: #111111;
+    margin: 0;
+    width: 100%;
+    max-width: 100vw;
+}
+
+section, [id] {
+    scroll-margin-top: 10dvh;
+}
+/* ============================================== Index ============================================== */
+.index-body {
+    width: 100dvw;
+    height: 100dvh;
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-content: center;
+}
+
+
+.language-box {
+    min-width: 50%;
+    min-height: 70%;
+    border-radius: 8px;
+    border-top: 1px solid#bbbe;
+    border-left: 1px solid #bbbe;
+    background-color: #111111ee;
+    margin: auto;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selector__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-justify: center;
+    max-width: 100%;
+    z-index: 20;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.3em;
+    color: #eee;
+    padding: 0em;
+}
+.lpicon {
+    align-self: center;
+    max-width: 3em;
+    margin-bottom: 1em;
+    border-radius: 4px;
+    border-top: 1px solid#bbbe;
+    border-left: 1px solid #bbbe;
+    animation: aparecer 3s ease forwards, palpitar 3s ease infinite;
+}
+.selector--title {
+    margin: auto;
+    margin-bottom: 1em;
+}
+.selector--body {
+    margin: auto;
+    margin-bottom: 1em;
+}
+.selector--body2 {
+    margin-top: 0.2em;
+}
+.sbflex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.selector--body a {
+    color: #eee;
+    text-decoration: none;
+    font-style: bolder;
+}
+
+.flag1 {
+    border-right: 1px solid #bbb;
+    border-bottom: 1px solid #bbb;
+    padding: 0.5em;
+    margin: 0.5em;
+    border-radius: 4px;
+    background-image: none;
+    transition: transform 1s, background-image 2s;
+    /* animation: palpitar 7s ease-in infinite; */
+}
+.flag1:hover {
+    color: #111111;
+    transform: scale(1.2);
+    background-image: url(images/engflag.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.flag2 {
+    border-right: 1px solid #bbb;
+    border-bottom: 1px solid #bbb;
+    padding: 0.5em;
+    margin: 0.5em;
+    border-radius: 4px;
+    background-image: none;
+    transition: transform 1s, background-image 2s;
+}
+.flag2:hover {
+    color: #111111;
+    transform: scale(1.2);
+    background-image: url(images/spaflag.png);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.index-redes a{
+    color: #eee;
+    text-decoration: none;
+}
+.index-redes li {
+    list-style-type: none;
+}
+.index-redes ul{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+.index-redes {
+    font-size: 1.5em;
+    margin-top: 0em;
+}
+.fabri{
+    padding: 0.5em;
+    padding-top: 0;
+    margin: auto;
+    transition: transform, color, 1s;
+}
+.fabri:hover {
+    transform: scale(1.3);
+    color: #444;
+}
+
+/* ============================================== Home ============================================== */
+/* ============================================== título ============================================== */
+
+.title__container {
+    max-width: 100%;
+    min-height: 100vh; /*corregir*/
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+}
+
+.title {
+    color: #eee;
+    margin: 25px 10%;
+    animation: aparecer 2s ease-in-out forwards;
+}
+
+.subtitle {
+    color: #eee;
+    margin: 0 10%;
+    animation: aparecer 4s ease-in-out forwards;
+}
+
+.arrow-container {
+    display: flex;
+    position: relative;
+    bottom: 1em;
+    max-width: 100%;
+    justify-content: center;
+    font-size: 2em;
+    color: #eeea;
+}
+.arrow-container i {
+    animation: aparecer 2.5s ease-in forwards, palpitar 1.3s ease-in-out infinite;
+
+}
+
+.arrow-container:hover {
+    cursor: pointer;
+}
+
+/* ============================================== nav ============================================== */
+
+.menu__container {
+    height: 30px;
+    max-width: 100%;
+    background-color: #111111;
+    position: sticky;
+    top: 0;
+    display: flex;
+    border: 1px solid #eee;
+    margin: auto auto 5em auto;
+    justify-content: space-between;
+    align-content: space-evenly;
+    box-shadow: 0 2px 10px #444;
+    z-index: 1000;
+    isolation: isolate;
+}
+
+.bgcontainer2 {
+    z-index: -1;
+    max-width: 100%;
+}
+
+.menu {
+    width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-grow: 1;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+    z-index: inherit;
+}
+
+.menu--itemcontainer { 
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    list-style-type: none; 
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+
+.menu--item, .menu--details {
+    height: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+    color: #eee;
+    text-decoration: none;
+    margin: 0;
+    max-height: 100%;
+    max-width: 100%;
+    flex-grow: 1;   
+    align-content: center;
+    transition: background-color, 0.3s ease-out;
+}
+
+.menu--item:hover, .menu--details:hover {
+    background-color: #444a;
+    border-radius: 4px;
+    border-left: 1px solid #444;
+}
+
+.menu--details details,
+.menu--details summary {
+    list-style: none;}
+.menu--item summary::-webkit-details-marker {
+    display: none;
+}
+
+.menu--itemcontainer details{
+    position: relative;
+    display: flex;
+}
+
+.menu--details {
+    white-space: pre-wrap;
+    cursor: pointer;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    z-index: 1;
+}
+
+.mdetails--summary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.menu--itemcontainer details[open] summary{
+    position: absolute;
+    border-left: 1px solid #444;
+    border-radius: 4px;
+}
+
+.summary--container {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-top: 0;
+    border-radius: 4px;
+    background-color: #111111;
+    border-left: 1px solid #444;
+    z-index: 10;
+}
+
+.menu--details a {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    flex-grow: 1;
+    padding: 1em;
+    margin: auto;
+}
+
+/* ============================================== sections ============================================== */
+
+.main__section {
+    color: #bbb;
+    margin: auto;
+}
+.main__container {
+    max-width: 100%;
+    justify-content: center;
+}
+.section--title {
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 1.5em;
+}
+.section--innertitle {
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 1.1em;
+    color: #bbb5;
+}
+.section--body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    white-space: pre-line;
+    margin: 0 5em 5em 5em;
+    max-width: 100%;
+}
+
+/* ============================================== about ============================================== */
+
+.main_sectionflex /* contenedor de texto e imagen*/{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.section--bodyflex /* p al lado de imagen*/ {
+    max-width: 100%;
+    flex-basis: 270px;
+}
+
+.img--container /* contenedor de imagen*/ {
+    width: 25%;
+    flex-basis: 25%;
+    margin: 2em;
+    justify-self: center;
+}
+
+.profilepicture /* imagen */ {
+    border-radius: 50%;
+    width: 100%;
+    box-shadow: 0 0 15px #bbba;
+    opacity: 75%;
+}
+/* ============================================== section 2 ============================================== */
+
+.faqs {
+    margin: auto;
+}
+.section--faqs details,
+.section--faqs summary {
+    list-style: none;
+}
+.section--faqs summary::-webkit-details-marker {
+    display: none;
+}
+.faqs h3{
+    margin: 0;
+    padding: 1em;
+}
+.faqs p{
+    margin-top: 1em;
+}
+.faqs summary{
+    max-width: 100%;
+    max-height: 100%;
+    cursor: pointer;
+    transition: background-color  1.5s; 
+    overflow: hidden;
+}
+.faqs summary:hover {
+    background-color: #444a;
+    outline: 1px solid #bbb;
+}
+.faqs h3 {transition: transform 1.5s;}
+.faqs h3:hover {    transform: scale(1.1);}
+
+/* ============================================== education ============================================= */
+
+            .carrousel1 /*contenedor padre*/ {
+                max-width: 90%;
+                margin: auto;
+                padding: 0;
+                border-radius: 4px;
+                border-top: 1px solid #bbb;
+                border-left: 1px solid #bbb;
+            }
+
+            .carrousel1 ul::-webkit-scrollbar {
+                background-color: transparent;
+                max-height: 0.5em;
+            }
+
+            .carrousel1 ul::-webkit-scrollbar-button {
+                display: none;
+            }
+
+            .carrousel1 ul::-webkit-scrollbar-thumb {
+                background-color: #333;
+                border-radius: 8px;
+                cursor: pointer;
+            }
+            .carrousel1 ul::-webkit-scrollbar-thumb:hover {
+                background-color: #444;
+            }
+            .education__container ul,
+            .education__container li {
+                list-style-type: none;
+            }
+
+            .carrousel1 ul {
+                width: 100%;
+                max-height: 100%;
+                display: flex;
+                margin: 0;
+                padding: 0;
+                align-content: center;
+                align-items: center;
+                gap: 2em;
+                overflow-x: scroll;
+                scroll-snap-type: x mandatory;
+                anchor-name: --myCarousel;
+            }
+
+            .education--display {
+                margin: 2em 2em 3em 2em;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+            }
+
+            .carrousel1 li {
+                flex: 0 0 100%;
+                max-width: 100%;
+                justify-content: center;
+                align-content: center;
+                scroll-snap-align: center;
+
+            }
+            .education--pbox {
+                display: flex;
+                justify-content: center;
+                white-space: pre-line;
+            }
+
+            .education--text /*p span*/ {
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 1em;
+                white-space: pre-line;
+            }
+
+            .education--fabr /*i*/ {
+                font-size: 4em; 
+                margin: 0 0.2em 0 0.2em;
+            }
+
+            /* de aca*/
+            .carrousel1 ul::scroll-button(*) {
+                border: 0;
+                font-size: 1.5rem;
+                background: none;
+                margin: 0;
+                padding: 0;
+                color: #444;
+                cursor: pointer;
+                transition: color, transform 0.5s;
+            }
+
+            .carrousel1 ul::scroll-button(*):hover {
+                color: #bbb;
+                transform: scale(1.1)
+            }
+            .carrousel1 ul::scroll-button(*):focus {
+                color: #444;
+            }
+
+            .carrousel1 ul::scroll-button(*):active {
+                translate: 1px 1px;
+            }
+
+            .carrousel1 ul::scroll-button(*):disabled {
+                color: #222;
+                cursor: unset;
+                transform: none;
+            }
+
+            .carrousel1 ul::scroll-button(left) {
+                content: "◄";
+            }
+
+            .carrousel1 ul::scroll-button(right) {
+                content: "►";
+            }
+
+
+            .carrousel1 ul::scroll-button(*) {
+                position: absolute;
+                position-anchor: --myCarousel;
+                z-index: 100;
+            }
+            .carrousel1 ul::scroll-button(left) {
+                right: calc(anchor(left)  - 10%);
+                bottom: calc(anchor(top) - 10%);
+            }
+
+            .carrousel1 ul::scroll-button(right) {
+                left: calc(anchor(right) - 10%);
+                bottom: calc(anchor(top) - 10%);
+            }
+
+            .carrousel1 ul {
+                scroll-marker-group: after;
+            }
+
+            .carrousel1 ul::scroll-marker-group {
+                position: relative;
+                bottom: 2em;
+                display: flex;
+                justify-content: center;
+                gap: 1em;
+            }
+
+            .carrousel1 li::scroll-marker {
+                content: "";
+                width: 0.5em;
+                height: 0.5em;
+                background-color: transparent;
+                border: 1px solid #444;
+                border-radius: 50%;
+            }
+
+            .carrousel1 li::scroll-marker:target-current {
+                background-color: #444;
+            }
+            /* a aca */
+
+/* ============================================== Projects ============================================= */
+
+        /*#projects, #experience {
+                margin-top: 5em;
+            }*/
+
+            .carrousel2 /*contenedor padre*/ {
+                max-width: 90%;
+                margin: auto;
+                padding: 0;
+                border-radius: 4px;
+                border-top: 1px solid #bbb;
+                border-left: 1px solid #bbb;
+            }
+
+            .carrousel2 ul::-webkit-scrollbar {
+                background-color: transparent;
+                max-height: 0.5em;
+            }
+
+            .carrousel2 ul::-webkit-scrollbar-button {
+                display: none;
+            }
+
+            .carrousel2 ul::-webkit-scrollbar-thumb {
+                background-color: #333;
+                border-radius: 8px;
+                cursor: pointer;
+            }
+            .carrousel2 ul::-webkit-scrollbar-thumb:hover {
+                background-color: #444;
+            }
+            .education__container2 ul,
+            .education__container2 li {
+                list-style-type: none;
+            }
+
+            .carrousel2 ul {
+                width: 100%;
+                max-height: 100%;
+                display: flex;
+                margin: 0;
+                padding: 0;
+                align-content: center;
+                align-items: center;
+                gap: 2em;
+                overflow-x: scroll;
+                scroll-snap-type: x mandatory;
+                anchor-name: --myCarousel2;
+            }
+
+            .education--display2 {
+                margin: 2em 2em 3em 2em;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+            }
+
+            .carrousel2 li {
+                flex: 0 0 100%;
+                max-width: 100%;
+                justify-content: center;
+                align-content: center;
+                scroll-snap-align: center;
+            
+            }
+            .education--pbox2 {
+                display: flex;
+                justify-content: center;
+                white-space: pre-line;
+            }
+            .carrousel2 ul::scroll-button(*) {
+                border: 0;
+                font-size: 1.5rem;
+                background: none;
+                margin: 0;
+                padding: 0;
+                color: #444;
+                cursor: pointer;
+                transition: color, transform 0.5s;
+            }
+
+            .carrousel2 ul::scroll-button(*):hover {
+                color: #bbb;
+                transform: scale(1.1)
+            }
+            .carrousel2 ul::scroll-button(*):focus {
+                color: #444;
+            }
+
+            .carrousel2 ul::scroll-button(*):active {
+                translate: 1px 1px;
+            }
+
+            .carrousel2 ul::scroll-button(*):disabled {
+                color: #222;
+                cursor: unset;
+                transform: none;
+            }
+
+            .carrousel2 ul::scroll-button(left) {
+                content: "◄";
+            }
+
+            .carrousel2 ul::scroll-button(right) {
+                content: "►";
+            }
+
+
+            .carrousel2 ul::scroll-button(*) {
+                position: absolute;
+                position-anchor: --myCarousel2;
+                z-index: 100;
+            }
+            .carrousel2 ul::scroll-button(left) {
+                right: calc(anchor(left)  - 10%);
+                bottom: calc(anchor(top) - 10%);
+            }
+
+            .carrousel2 ul::scroll-button(right) {
+                left: calc(anchor(right) - 10%);
+                bottom: calc(anchor(top) - 10%);
+            }
+
+            .carrousel2 ul {
+                scroll-marker-group: after;
+            }
+
+            .carrousel2 ul::scroll-marker-group {
+                position: relative;
+                bottom: 2em;
+                display: flex;
+                justify-content: center;
+                gap: 1em;
+            }
+
+            .carrousel2 li::scroll-marker {
+                content: "";
+                width: 0.5em;
+                height: 0.5em;
+                background-color: transparent;
+                border: 1px solid #444;
+                border-radius: 50%;
+            }
+
+            .carrousel2 li::scroll-marker:target-current {
+                background-color: #444;
+            }
+            /* a aca */
+
+.education--fabr2 /*i*/ {
+    font-size: 4em; 
+    margin: 0 0.2em 0 0.2em;
+    animation: palpitar 3s infinite;
+    text-shadow: 1px 1px 8px #9b5;
+}
+
+.education--pbox2 a {
+    color: #bbb;
+}
+
+#circeria {
+    white-space: pre-line;
+}
+/* ============================================== Experience ============================================= */
+
+.experience__flexbox {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.experience--item {
+    border-top: 1px solid #bbb;
+    border-left: 1px solid #bbb;
+    border-radius: 4px;
+    flex: 1 1 250px;
+    max-width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+}
+
+.fabr--exp {
+    font-size: 2em;
+    padding: 1em 0 0 0;
+    margin: 0;
+}
+
+.experience--text {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    white-space: pre-line;
+    text-align: center;
+    margin: 0 0.3em 0 0.3em;
+}
+
+.experience--item h4 {
+    margin-bottom: 0;
+    margin-top: 1.5em;
+}
+
+.fecha {
+    color: #eee;
+    text-shadow: 1px 0px 5px #9b5;
+}
+/*.soft-palp {
+    animation: palpitar-2 3s ease-in-out infinite;
+}*/
+
+/* ============================================== contact ============================================== */
+
+
+.contactbox fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin: 5em 10% 2em 10%;
+}
+
+.contactbox legend {
+    padding: 0 2em 0 2em;
+}
+
+.contact--input, .contact--input textarea {
+    padding: 0.5em;
+    margin: 0em 0 1em 0;
+    min-width: 50%;
+    max-width: 100%;
+    color: #eee;
+    background-color: #333;
+    border: none;
+    border-top: 1px solid #eee;
+    border-left: 1px solid #eee;
+    outline: none;
+    transition: transform 1.5s;
+}
+
+.contact--input:focus {
+    background-color: #444;
+    outline: #bbb;
+    transform: scale(1.05);
+    border-radius: 4px;
+}
+
+.contactbox textarea{
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-size: inherit;
+    max-width: 100%;
+    resize: none;
+}
+
+.contactbox label, .contactbox label textarea {
+    font-family: 'Courier New', Courier, monospace;
+    font-style: bold;
+    font-size: inherit;
+    margin-bottom: 0.2em;
+}
+
+.contactbox label textarea {
+    font-size: 20px;
+}
+
+.send {
+    align-self: end;
+    cursor: pointer;
+    margin-right: 24.2%;
+    margin-bottom: 1em;
+    font-size: 1em;
+    width: 10em;
+    height: 2em;
+    max-width: 100%;
+    background-color: #333;
+    font-family: 'Courier New', Courier, monospace;
+    color: #bbb;
+    border: none;
+    border-top: 1px solid #eee;
+    border-left: 1px solid #eee;
+    transition: transform, background-color, 1s;
+}
+
+.send:hover {
+    background-color: #444;
+    transform: scale(1.09);
+    outline: none;
+    border-radius: 4px;
+}
+
+/* ============================================== footer ============================================== */
+
+.footer {
+    position: relative;
+    display: flex;
+    height: 15rem;
+    width: 100%;
+    border-top: 1px solid #bbb;
+    overflow: hidden;
+    color: #bbb;
+}
+.bgcontainer {
+    width: 100%;
+    z-index: 0;
+}
+.bgvideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 75%;
+}
+
+.footer__content {
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 0.5em;
+    margin-right: 3em;
+    justify-content: center;
+    align-content: center;
+    min-width: fit-content;
+    max-width: 100%;
+    z-index: 1;
+    font-size: 1.3em;
+    color: #eee;
+
+}
+
+.redes a{
+    color: #eee;
+    text-decoration: none;
+}
+.redes li {
+    list-style-type: none;
+}
+.redes ul{
+    display: flex;
+    justify-content: center;
+}
+.redes {
+    font-size: 1.2em;
+}
+.fabr{
+    padding: 0.5em;
+    padding-top: 0;
+    margin: 0;
+    transition: transform, color, 1s;
+}
+.fabr:hover {
+    transform: scale(1.3);
+    color: #444;
+}
+
+/* ============================================== animaciones ============================================== */
+
+@keyframes aparecer { 
+    from 
+        {opacity: 0;
+        }
+    to {
+        opacity: 1;
+        }
+}
+
+@keyframes palpitar {
+    0%, 100%{transform: scale(1);}
+    40%{transform: scale(1.15);}
+
+}
+
+@keyframes palpitar-2 {
+    0%, 100%{transform: scale(1);}
+    40%{transform: scale(1.10);}
+
+}
+
+/* ============================================== responsive ============================================== */
+/* ============================================== index ============================================== */
+
+
+
+/* ============================================== main ============================================== */
+
+
+@media screen and (max-width:600px) {
+    
+        /* index */
+    .language-box {
+        margin: 2em;
+        text-align: center;
+        }
+
+
+    .profilepicture /* imagen */ {
+    border-radius: 10%;
+    border-left: 1px solid #bbb;
+    border-top: 1px solid #bbb;
+    box-shadow: none;
+    width: 100%;
+    opacity: 75%;
+    }
+    .img--container /* contenedor de imagen*/ {
+    min-width: 25dvh;
+    max-width: 40dvh;
+    flex: 1 1 25%;
+    margin: auto;
+    justify-self: center;
+    }
+    .section--bodyflex {
+        margin: 1em;
+    }
+
+    .send {
+        margin: auto;
+    }
+
+    .footer__content {
+        position: relative;
+        left: -5%;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .menu a, .menu details {
+        font-size: 0.9em;
+    }
+    .menu li {
+        border-left: 1px solid #222;
+    }
+}
+
+@media screen and (max-width:430px) {
+
+    /* index */
+    .language-box {
+        margin: 1em;
+        text-align: center;
+        }
+
+    .experience__flexbox {
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 90%;
+    }
+
+    .experience--item{
+        max-width: 90%;
+    }
+}
+
+
+@media screen and (max-width:319px) { 
+    .contactbox fieldset {
+        margin: auto;
+        }
+}
